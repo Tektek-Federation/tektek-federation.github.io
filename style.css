@@ -1,0 +1,63 @@
+@keyframes fadeIn{
+
+    from{
+        transform:translateY(30%);
+        opacity:0%;
+    }
+
+    to {
+        transform:translateY(0);
+        opacity:100%;
+    }
+
+}
+
+
+html {
+    background-color:#000;
+    color:#fff;
+    text-align:center;
+}
+
+html{
+    /*Background of Tektek symbol*/
+    background-image:url(FederalEmblem-20August2024.svg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 40%;
+}
+
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+a {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    margin-left:2%;
+    margin-right:2%;
+    font-family:'Courier New', Courier, monospace;
+    color:#fff;
+    
+}
+
+a:hover {
+    background-color:#fff;
+    color:navy;
+
+}
