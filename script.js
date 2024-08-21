@@ -16,7 +16,7 @@ function selectLanguage(language){
         subtitle.innerHTML = "Tainit Texitec!";
         wiki.innerHTML = "Pêprônt leouriplexe";
         news.innerHTML = "Môvenônne Texlaid";
-        citizen.innerHTML = "Scŷnninne mane";
+        citizen.innerHTML = "Scŷnninne maned";
         tiutro.innerHTML = "Gcoinne t Tiutro";
     }
     else if (language=='English'){
