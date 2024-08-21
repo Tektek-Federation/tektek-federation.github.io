@@ -6,6 +6,8 @@ function selectLanguage(language){
     const subtitle = document.getElementById("subtitle");
     const wiki = document.getElementById("wiki");
     const news = document.getElementById("news");
+    const citizen = document.getElementById("citizen");
+    const tiutro = document.getElementById("tiutro");
 
     if (language=='Kattspek'){
         kattspek.style.border = "3px solid #ffffff";
@@ -14,6 +16,8 @@ function selectLanguage(language){
         subtitle.innerHTML = "Tainit Texitec!";
         wiki.innerHTML = "Pêprônt leouriplexe";
         news.innerHTML = "Môvenônne Texlaid";
+        citizen.innerHTML = "Scŷnninne mane";
+        tiutro.innerHTML = "Gcoinne t Tiutro";
     }
     else if (language=='English'){
         english.style.border="3px solid #ffffff";
@@ -22,5 +26,7 @@ function selectLanguage(language){
         subtitle.innerHTML = "Foreva Tektek!";
         wiki.innerHTML = "Wiki page";
         news.innerHTML = "Tek News Channel";
+        citizen.innerHTML = "Become a citizen";
+        tiutro.innerHTML = "Join the Tiutro organization";
     }
 };
