@@ -21,7 +21,7 @@ html {
 
 html{
     /*Background of Tektek symbol*/
-    background-image:url(img/FederalEmblem-20August2024.svg);
+    background-image:url('img/FederalEmblem-20August2024.svg');
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
