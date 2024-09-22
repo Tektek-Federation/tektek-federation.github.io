@@ -2,18 +2,37 @@
 <html>
     <head>
         <title>Chŷrmixait Texitec | Federation of Tektek</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
         <link rel = "preload" as = "style" href="../style.css"/>
         <link rel = "stylesheet" href = "../style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset = "utf-8">
         <meta content = "Chŷrmixait Texitec" property = "og:title"/>
         <meta content="Official website of Tektek | Foreva Tektek!" property="og:description" />
         <meta content="https://tektek-fed.github.io" property="og:url" />
         <meta content="/img/favicon.ico" property="og:image" />
         <meta content="#FFFF00" data-react-helmet="true" name="theme-color" />
-        <script src = "../script.js"></script>
+        <script src = "scriptKatt.js"></script>
     </head>
     <body>
-        
+        <div class = "fadeIn">
+            <div class = "languageSelection" style="margin:3%">
+                <!--Selection between English & Kattspek, potentially other languages in the future if people bother to translate this site-->
+                <img id = "kattspek" onclick="selectLanguage('Kattspek');" src = "../img/Tektek.png" width="50"/>
+                <img id = "english" onclick="selectLanguage('English');" style = "border:3px solid #ffffff;" src = "../img/USA.png" width="50"/>
+            </div>
+
+            <h1 style="margin-top:5%;" id = "title">KATTSPEK</h1>
+            <i><p id = "subtitle">Foreva Tektek!</p></i>
+
+            <br><br><br>
+
+            <div class = "links">
+				<a href = "../index.html" id = "home" target="_blank">Home</a>
+				<br><br>
+                <a href = "https://docs.google.com/document/d/1fH9flP-aw_QvalD9FNuG9BnDMnVNDPT9bCCdzl_LERw/edit?usp=sharing" id = "kattrules" target="_blank">Grammar, Orthography, etc.</a>
+                <a href = "https://docs.google.com/spreadsheets/d/12dQSo9I0a68PflKn-HT-m2dXlaKiuc05Znf5f1gl4xM/edit?usp=sharing" id = "kattwords" target="_blank">Spreadsheet of Words</a>
+            </div>
+        </div>
     </body>
 </html>
