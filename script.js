@@ -18,7 +18,7 @@ function selectLanguage(language){
         news.innerHTML = "Môvenônne Texlaid";
         citizen.innerHTML = "Scŷnninne maned";
         tiutro.innerHTML = "Gcoinne t Tiutro";
-        kattspek-learn.innerHTML = "Lernne Xacspec";
+        kattspeklearn.innerHTML = "Lernne Xacspec";
     }
     else if (language=='English'){
         english.style.border="3px solid #ffffff";
@@ -29,6 +29,6 @@ function selectLanguage(language){
         news.innerHTML = "Tek News Channel";
         citizen.innerHTML = "Become a citizen";
         tiutro.innerHTML = "Join the Tiutro organization";
-        kattspek-learn.innerHTML = "Learn Kattspek";
+        kattspeklearn.innerHTML = "Learn Kattspek";
     }
 };
