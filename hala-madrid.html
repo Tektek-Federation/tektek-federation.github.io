@@ -5,18 +5,100 @@
         <title>hala madrid</title>
         <link rel="icon" type="image/x-icon" href="img/madrid.svg"/>
         <style>
+
+        	@keyframes sbinalla{
+        		from{
+        			transform:rotateY(0);
+        		}
+        		to{
+        			transform:rotateY(-360deg);
+        		}
+        	}
+
+        	@keyframes fadeIn{
+
+			    from{
+			        transform:translateY(30%);
+			        opacity:0%;
+			    }
+
+			    to {
+			        transform:translateY(0);
+			        opacity:100%;
+			    }
+
+			}
+
+
+			.fadeIn{
+			    animation-name: fadeIn;
+			    animation-duration: 1s;
+			}
+
+			.sbinalla{
+
+				position:absolute;
+				left:50%;
+				top:50%;
+				margin-left:10%;
+				margin-top:-10%;
+
+				-webkit-perspective:100px;
+			    -moz-perspective:100px;
+			    perspective:100px;
+			    -webkit-perspective-origin:center 400px /* 300px + 200px/2 */;
+			    -moz-perspective-origin:center 400px /* 300px + 200px/2 */;
+			    perspective-origin:center 400px /* 300px + 200px/2 */;
+			    -webkit-transform-style:preserve-3d;
+			    -moz-transform-style:preserve-3d;
+			    transform-style:preserve-3d;
+			    -webkit-transform: rotateY(45deg);
+			    animation-name:sbinalla;
+			    -webkit-animation-name:sbinalla;
+			    -moz-animation-name:sbinalla;
+			    animation-duration:3s;
+			    -webkit-animation-duration:3s;
+			    -moz-animation-duration:3s;
+			    animation-delay: 0s;
+			    -webkit-animation-delay:0s;
+			    -moz-animation-delay:0s;
+			    -webkit-animation-iteration-count: infinite;
+			    -moz-animation-iteration-count: infinite;
+			    animation-iteration-count: infinite;
+			    -webkit-transform-origin:center;
+			    -moz-transform-origin:center;
+			    transform-origin:center;
+			    vertical-align:center;
+
+			}
         	html{
-			    /*Background of Tektek symbol*/
-			    background-color:#000;
+				background-color:#000;
 			    color:#fff;
 			    text-align:center;
+        	}
+        	html{
+			    /*Background of Tektek symbol*/
 			    background-image:url('img/madrid.svg');
 			    background-repeat:no-repeat;
 			    background-attachment: fixed;
 			    background-position: center;
-			    background-size: 40%;
+			    background-size: 25%;
+			    background-opacity:50%;
 			}
         </style>
+        <script>
+        	var audio = new Audio("img/kimpembe.mp3");
+
+			audio.oncanplaythrough = function(){
+				audio.play();
+			}
+
+			audio.loop = true;
+
+			audio.onended = function(){
+				audio.play();
+			}
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset = "utf-8">
         <meta content = "hala madrid" property = "og:title"/>
@@ -26,5 +108,14 @@
         <meta content="#FFFF00" data-react-helmet="true" name="theme-color" />
         <script src = "script.js"></script>
     </head>
-
+    <body>
+    	<div class="fadeIn">
+    		<div class = "sbinalla" onclick="audio.play()">
+    			<h1>hala madrid</h1>
+    			<br><br><br><br><br>
+    			<p>click me :3</p>
+    		</div>
+    	</div>
+    	<audio src = "img/kimpembe.mp3" autostart="true"/>
+    </body>
 </html>
