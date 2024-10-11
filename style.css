@@ -34,6 +34,10 @@ h1 {
     font-weight:bold;
 }
 
+.leftPos {
+	text-align: left;
+}
+
 .fadeIn{
     animation-name: fadeIn;
     animation-duration: 1s;
